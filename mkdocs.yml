@@ -1,0 +1,31 @@
+site_name: Brouwerij Robier
+site_url: https://www.robier.nl/
+site_description: Brouwsels van Rogier
+site_author: Rogier
+
+repo_url: https://github.com/wensink/robier
+
+theme:
+    name: mkdocs
+    locale: en
+    highlightjs: true
+    hljs_languages:
+        - yaml
+        - python
+    hide:
+      - footer
+
+nav:
+    - Home: index.md
+    - Brouwsels: brouwsels.md
+    - About:
+        - Brouw notities: about/brouw-notes.md
+        - Contact: about/contact.md
+
+extra:
+  social:
+    - icon: fontawesome/brands/instagram 
+      link: https://www.instagram.com/brouwerij_robier/
+
+
+copyright: Copyright &copy; 2023 [Instagram](https://www.instagram.com/brouwerij_robier/) | [Untappd](https://untappd.com/b/brouwerij-robier)
