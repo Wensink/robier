@@ -1,6 +1,10 @@
 Hier de brouwsels die er gemaakt zijn:
 
-Nummer | Naam | Type | Alc.% | Voorraad
--------| ------------- | ------------ | ------------ | ------------
-[27](bieren/27-blond.md) | blond  | Blond | 7,5 | Ja
-28 | tripel  | Tripel | 8 | Ja
+Nummer | Naam | Type | ABV | IBU | EBC | Voorraad
+-----------------------------| ------- | ------ | --- | -- | -- | ---
+[23](bieren/23-blond.md)     | Nummer 23 | Blond  | 8,0 | 75 | 15 | Ja
+[24](bieren/24-kerstbier.md) | Nummer 24 | Kruiding donker | 8,0 | 75 | 15 | Ja
+[25](bieren/25-saison.md)    | Nummer 25 | Saison | 8,0 | 75 | 15 | Ja
+[26](bieren/26-stout.md)     | Nummer 26 | Stout  | 8,0 | 75 | 15 | Ja
+[27](bieren/27-blond.md)     | Nummer 27 | Blond  | 8,0 | 75 | 15 | Ja
+[28](bieren/28-tripel.md)    | Nummer 28 | Tripel | 9,0 |  ? |  ? | Ja
