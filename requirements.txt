@@ -1,4 +1,4 @@
 mkdocs
 pip
 fontawesome_markdown
-mkdocs-meterial
+mkdocs-material
