@@ -7,14 +7,14 @@ repo_url: https://github.com/wensink/robier
 edit_uri: blob/main/docs/
 
 theme:
-    name: mkdocs
+    name: material
     locale: en
     highlightjs: true
     hljs_languages:
         - yaml
         - python
-    hide:
-        - footer
+    features:
+        - navigation.footer
 
 nav:
     - Home: index.md
@@ -25,10 +25,21 @@ nav:
 
 extra:
     social:
-        - icon: fontawesome/brands/instagram
+        - icon: simple/instagram
           link: https://www.instagram.com/brouwerij_robier/
+        - icon: simple/untappd
+          link: https://untappd.com/b/brouwerij-robier
 
 extra_css:
     - stylesheets/extra.css
 
-copyright: Copyright &copy; 2023 [Instagram](https://www.instagram.com/brouwerij_robier/) | [Untappd](https://untappd.com/b/brouwerij-robier)
+markdown_extensions:
+    - admonition
+    - codehilite
+    - smarty
+    - meta
+    - toc:
+          permalink: True
+    - attr_list
+
+copyright: Copyright &copy; 2023

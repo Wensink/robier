@@ -1,7 +1,8 @@
-.md-footer__inner {
+nav.md-footer__inner.md-grid {
   display: none;
 }
 
 .md-footer-nav {
   display: none;
 }
+
