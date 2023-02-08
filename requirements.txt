@@ -1,4 +1,5 @@
 mkdocs
 pip
 fontawesome_markdown
+mkdocs-material-extensions
 mkdocs-material
