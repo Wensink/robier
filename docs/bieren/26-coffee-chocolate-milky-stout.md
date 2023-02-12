@@ -15,11 +15,11 @@ Laat hier je review achter over dit bier:
 
 Naam | Gewicht (g) | % | EBC
 ------------ | ---- | --- | ------------
-Pilsmout | 1900 |  | 3-5
-Caramout | 400 |  | 50
-Pale mout | 375  |  | 6-9
-Chocolade mout | 150 |  | 900-1200
-Black mout | 60 |  | 1400
+Pilsmout | 1900 | 65,9 | 3-5
+Caramout | 400 | 13,7 | 50
+Pale mout | 375  | 13,0 | 6-9
+Chocolade mout | 150 | 5,2 | 900-1200
+Black mout | 60 | 2,1 | 1400
 
 
 ###Hop
