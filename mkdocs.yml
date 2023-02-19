@@ -1,6 +1,6 @@
 site_name: Brouwerij Robier
 site_url: https://www.robier.nl/
-site_description: Brouwsels van Rogier
+site_description: Bieren van Rogier
 site_author: Rogier
 
 repo_url: https://github.com/wensink/robier
@@ -17,8 +17,8 @@ theme:
         - navigation.footer
 
 nav:
-    - Home: index.md
-    - Brouwsels: brouwsels.md
+    - Proost: index.md
+    - Bieren: bieren.md
     - About:
         - Brouw notities: about/brouw-notes.md
         - Contact: about/contact.md
