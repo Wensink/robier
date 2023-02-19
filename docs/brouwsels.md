@@ -11,8 +11,8 @@ Nummer | Naam | Type | alc.% | Brouwdatum | Botteldatum | Voorraad
 [21](bieren/21-dubbel-stout-biab.md)     | Nummer 21 | Dubbel  | 6,4 | 29-3-22 | 16-4-22 | Ja
 [22](bieren/22-american-wheat-beer.md)     | Nummer 22 | Tarwebier  | 6,5 | - | - | Ja
 [23](bieren/23-london-bitter.md)     | Nummer 23 | Bitter  | 8,0 | 31-7-22 | 26-8-22 | Ja
-[24](bieren/24-kerstbier.md) | Nummer 24 | Kruidig donker | 8,6 | 10-9-22 | 1-10-22 | Ja
+[24](bieren/24-kerstbier.md) | Nummer 24 | Kerstbier | 8,6 | 10-9-22 | 1-10-22 | Ja
 [25](bieren/25-saison.md)    | Nummer 25 | Saison | 6,0 | 2-10-22 | - | Nee
 [26](bieren/26-coffee-chocolate-milky-stout.md)     | Nummer 26 | Stout  | 5,5 | - | - | Ja
 [27](bieren/27-blond.md)     | Nummer 27 | Blond  | 7,8 | - | - | Ja
-[28](bieren/28-tripel.md)    | Nummer 28 | Tripel | 8,0 | 29-01-23 | - | - 
+[28](bieren/28-tripel.md)    | Nummer 28 | Tripel | 8,0 | 29-01-23 | 18-02-23 | Ja 
