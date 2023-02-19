@@ -2,7 +2,7 @@
 
 Een tripel met niet al te hoog alcohol percentage (waarschijnlijk een rekenfoutje gemaakt met de hoeveelheid mout). Voor de afwisseling zelf wat koriander en sinaasappelschil toegevoegd. Na vergisting is het alcoholpercentage 7,7%. Dus met een beetje bottelsuiker in de fles kom je uit op zo'n 8,0%.
 
-[Untappd](https://untappd.com/b/brouwerij-robier)
+[Untappd](https://untappd.com/b/brouwerij-robier-nummer-xxviii-tripel/5244006){target=_blank}
 
 
 
