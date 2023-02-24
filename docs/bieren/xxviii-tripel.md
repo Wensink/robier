@@ -1,4 +1,4 @@
-# #28 Tripel
+# #XXVIII Tripel
 
 Een tripel met niet al te hoog alcohol percentage (waarschijnlijk een rekenfoutje gemaakt met de hoeveelheid mout). Voor de afwisseling zelf wat koriander en sinaasappelschil toegevoegd. Na vergisting is het alcoholpercentage 7,7%. Dus met een beetje bottelsuiker in de fles kom je uit op zo'n 8,0%.
 

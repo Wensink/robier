@@ -3,8 +3,8 @@ Hier de bieren die er gemaakt zijn:
 Nummer | Naam | Type | alc.% | Brouwdatum | Botteldatum | Voorraad
 -----------------------------| ------- | ------ | ------ | ------ |  -- | ---
 [XXVIII](bieren/XXVIII-tripel.md)    | Nummer 28 | Tripel | 8,0 | 29-01-23 | 18-02-23 | Ja 
-[27](bieren/27-blond.md)     | Nummer 27 | Blond  | 7,8 | - | - | Ja
-[26](bieren/26-coffee-chocolate-milky-stout.md)     | Nummer 26 | Stout  | 5,5 | - | - | Ja
+[27](bieren/27-blond.md)     | Nummer 27 | Blond  | 7,8 | 27-12-22 | 14-01-23 | Ja
+[26](bieren/26-coffee-chocolate-milky-stout.md)     | Nummer 26 | Stout  | 5,5 | 9-11-22 | 19-11-22 | Ja
 [25](bieren/25-saison.md)    | Nummer 25 | Saison | 6,0 | 2-10-22 | - | Nee
 [24](bieren/24-kerstbier.md) | Nummer 24 | Kerstbier | 8,6 | 10-9-22 | 1-10-22 | Ja
 [23](bieren/23-london-bitter.md)     | Nummer 23 | Bitter  | 8,0 | 31-7-22 | 26-8-22 | Ja
