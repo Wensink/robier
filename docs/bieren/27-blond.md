@@ -41,3 +41,4 @@ Temperatuur | Tijd | SG
 - Gist: T-58
 - OG: 1066
 - FG: 1008
+- Alc: 8,1%

@@ -2,6 +2,7 @@
 
 Een tripel met niet al te hoog alcohol percentage (waarschijnlijk een rekenfoutje gemaakt met de hoeveelheid mout). Voor de afwisseling zelf wat koriander en sinaasappelschil toegevoegd. Na vergisting is het alcoholpercentage 7,7%. Dus met een beetje bottelsuiker in de fles kom je uit op zo'n 8,0%.
 
+Laat hier je review achter over dit bier:
 [Untappd](https://untappd.com/b/brouwerij-robier-nummer-xxviii-tripel/5244006){target=_blank}
 
 
@@ -41,3 +42,4 @@ Temperatuur | Tijd | SG
 - Gist: S-04
 - OG: 1069
 - FG: 1012
+- Alc: 8,0%
