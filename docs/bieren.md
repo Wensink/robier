@@ -2,6 +2,8 @@ Hier de bieren die er gemaakt zijn:
 
 Nummer | Naam | Type | alc.% | Brouwdatum | Botteldatum | Voorraad
 -----------------------------| ------- | ------ | ------ | ------ |  -- | ---
+[31](bieren/31-ris.md)     | Nummer 31 Russian Imperial Stout | RIS  | 10,5 |  |  | Ja
+[30](bieren/20-tripel-karmeliet-kloon.md)     | Nummer 30 karmeliet kloon | Tripel  | 8,4 |  |  | Ja
 [11101](bieren/11101-blond.md)    | Nummer 29 | Blond | 8,0 | 29-01-23 | 18-02-23 | Ja 
 [XXVIII](bieren/xxviii-tripel.md)    | Nummer 28 | Tripel | 8,0 | 29-01-23 | 18-02-23 | Ja 
 [27](bieren/27-blond.md)     | Nummer 27 | Blond  | 7,8 | 27-12-22 | 14-01-23 | Ja
