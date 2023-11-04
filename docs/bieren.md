@@ -2,7 +2,13 @@ Hier de bieren die er gemaakt zijn:
 
 Nummer | Naam | Type | alc.% | Brouwdatum | Botteldatum | Voorraad
 -----------------------------| ------- | ------ | ------ | ------ |  -- | ---
-[31](bieren/31-ris.md)     | Nummer 31 Russian Imperial Stout | RIS | 10,5 |  |  | Ja
+[37](bieren/37-ruby-mild.md)     | Nummer 37 Ruby Mild | Mild | 5,4 | 1-10-23 | 28-10-23 | Ja
+[36](bieren/36-blonde-ipa.md)     | Nummer 36 Blonde IPA | blond/IPA | 6,1 | 29-9-23 | 25-10-23 | Ja
+[35](bieren/35-tarwebier-wb-06.md)     | Nummer 35 Tarwebier WB-06 | Tarwebier | 6,5 | 10-8-23 | 3-9-23 | Ja
+[34](bieren/34-tarwebier-us-05.md)     | Nummer 34 Tarwebier US-05 | Tarwebier | 6,5 | 10-8-23 | 3-9-23 | Ja
+[33](bieren/33-zwaar-blond.md)     | Nummer 33 Zwaar Blond | Zwaar blond | 8,5 |  |  | Ja
+[32](bieren/32-watermeloen-ipa.md)     | Nummer 32 Watermeloen IPA | IPA | 4,9 | 7-5-23 | 18-5-23 | Ja
+[31](bieren/31-ris.md)     | Nummer 31 Russian Imperial Stout | RIS | 10,5 | 19-3-23 | 1-4-23 | Ja
 [30](bieren/30-drie-granen-tripel.md)     | Nummer 30 drie granen tripel | Tripel | 8,4 | 18-3-23 | 1-4-23 | Ja
 [11101](bieren/11101-blond.md)    | Nummer 29 | Blond | 8,0 | 29-01-23 | 18-02-23 | Ja
 [XXVIII](bieren/xxviii-tripel.md)    | Nummer 28 | Tripel | 8,0 | 29-01-23 | 18-02-23 | Nee 
