@@ -5,7 +5,7 @@ Kerst 2023. Nog 2 maanden en het is zover. Dit jaar ben ik gegaan voor een bier 
 
 
 Laat hier je review achter over dit bier:
-[Untappd](https://untappd.com/b/brouwerij-robier-blonde/5593408){target=_blank}
+[Untappd](https://untappd.com/b/brouwerij-robier-ruby-mild-xmas-2023/5594903){target=_blank}
 
 
 
