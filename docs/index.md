@@ -9,3 +9,5 @@ In het gezin ben ik de enige die het drinkt, maar bij ouders/buren/vrienden/coll
 Bij [bieren](bieren.md) kun je zien wat ik zoal gemaakt heb en of er misschien nog wat voorraad van is. Ook heeft elk bier een link in Untappd, zodat je een rating kunt geven als het geproefd hebt, of om de meningen van anderen te lezen. 
 
 Tja, en dan de naam. Elk bier een naam geven ben ik nog niet aan toe gekomen, dus is het nu alleen een nummer. Soms uit het decimale stelsel, dan weer in Romeinse cijfers. Misschien eens een uitstapje maken in het binaire stelsel.  De naam voor de brouwerij was dan weer niet zo moeilijk :-)  
+
+Op [Untappd](https://untappd.com/BrouwerijRobier/beer) vind je [hier](https://untappd.com/BrouwerijRobier/beer) een overzicht van alle bieren die het op die website hebben gehaald. 
