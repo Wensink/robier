@@ -2,4 +2,5 @@ mkdocs
 pip
 fontawesome_markdown
 mkdocs-material-extensions
+pymdown-extensions~=10.2
 mkdocs-material
