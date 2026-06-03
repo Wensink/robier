@@ -1,3 +1,5 @@
+// Make list dynamic based on database instead of hardcoded
+
 const CORS_HEADERS = {
   'Access-Control-Allow-Origin': 'https://www.robier.nl',
   'Access-Control-Allow-Methods': 'GET, OPTIONS',
