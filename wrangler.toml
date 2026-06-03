@@ -1,0 +1,8 @@
+name = "robier-worker"
+main = "worker/index.js"
+compatibility_date = "2024-05-12"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "robier-db"
+database_id = "ad279bf1-6c12-4983-9c12-a4852604f132"
