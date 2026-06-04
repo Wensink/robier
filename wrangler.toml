@@ -8,5 +8,9 @@ database_name = "robier-db"
 database_id = "ad279bf1-6c12-4983-9c12-a4852604f132"
 
 [[routes]]
-pattern = "robier.nl/bieren/*"
+pattern = "robier.nl/bieren/*/index.html"
+zone_name = "robier.nl"
+
+[[routes]]
+pattern = "www.robier.nl/bieren/*/index.html"
 zone_name = "robier.nl"
