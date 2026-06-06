@@ -7,12 +7,24 @@ binding = "DB"
 database_name = "robier-db"
 database_id = "ad279bf1-6c12-4983-9c12-a4852604f132"
 
+[[routes]]
+pattern = "robier.nl/api/*"
+zone_name = "robier.nl"
+
+[[routes]]
+pattern = "robier.nl/brouwerij*"
+zone_name = "robier.nl"
+
+[[routes]]
+pattern = "www.robier.nl/api/*"
+zone_name = "robier.nl"
+
+[[routes]]
+pattern = "www.robier.nl/brouwerij*"
+zone_name = "robier.nl"
+
 [env.production]
 vars = { ADMIN_PASSWORD = "" }
-routes = [
-  { pattern = "robier.nl/brouwerij*", zone_name = "robier.nl" },
-  { pattern = "www.robier.nl/brouwerij*", zone_name = "robier.nl" }
-]
 
 [env.development]
 vars = { ADMIN_PASSWORD = "dev-password" }
