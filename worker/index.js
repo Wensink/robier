@@ -258,10 +258,22 @@ function renderDashboardHTML(beers) {
     const form = document.getElementById('beerForm');
     const beerId = document.getElementById('beerId');
 
+    fetch('/api/bieren')
+      .then(r => r.json())
+      .then(beers => {
+        beers.forEach(beer => {
+          const option = document.createElement('option');
+          option.value = beer.id;
+          option.textContent = `${beer.name} (#${beer.id})`;
+          select.appendChild(option);
+        });
+      });
+
     select.addEventListener('change', async function() {
       if (!this.value) {
         form.reset();
         beerId.value = '';
+        document.getElementById('deleteBtn').disabled = true;
         return;
       }
 
@@ -353,7 +365,8 @@ export default {
     }
 
     if (url.pathname === '/brouwerij/logout') {
-      const resp = new Response('Uitgelogd. <a href="/brouwerij/">Terug</a>', { headers: htmlHeaders() });
+      const resp = new Response(null, { status: 302 });
+      resp.headers.set('Location', '/');
       resp.headers.set('Set-Cookie', 'admin_session=; Path=/brouwerij; Max-Age=0');
       return resp;
     }
@@ -409,7 +422,9 @@ export default {
           ).bind(detailId, newBeerId, name, description, yeast, og, fg, alc, mashWater, spargeWater).run();
         }
 
-        return new Response('Opgeslagen!', { headers: htmlHeaders() });
+        const resp = new Response(null, { status: 302 });
+        resp.headers.set('Location', '/brouwerij/');
+        return resp;
       } catch (err) {
         return new Response(`Fout: ${err.message}`, { status: 500 });
       }
