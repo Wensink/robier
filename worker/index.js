@@ -113,7 +113,7 @@ function renderLoginHTML() {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Brouwerij Admin - Brouwerij Robier</title>
+  <title>Brouwerij Robier</title>
   <style>
     body { font-family: sans-serif; max-width: 400px; margin: 100px auto; padding: 20px; }
     h1 { text-align: center; }
@@ -125,7 +125,7 @@ function renderLoginHTML() {
   </style>
 </head>
 <body>
-  <h1>Brouwerij Admin</h1>
+  <h1>Brouwerij RoBier</h1>
   <form method="POST">
     <input type="password" name="password" placeholder="Wachtwoord" required autofocus>
     <button type="submit">Inloggen</button>
@@ -142,7 +142,7 @@ function renderDashboardHTML(beers) {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Dashboard - Brouwerij Robier Admin</title>
+  <title>Dashboard - Brouwerij Robier</title>
   <style>
     body { font-family: sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; }
     h1 { text-align: center; }
@@ -159,7 +159,7 @@ function renderDashboardHTML(beers) {
 </head>
 <body>
   <div class="logout"><a href="/brouwerij/logout">Uitloggen</a></div>
-  <h1>Brouwerij Admin Dashboard</h1>
+  <h1>Brouwerij RoBier Dashboard</h1>
 
   <div class="controls">
     <div class="form-group">
@@ -246,7 +246,10 @@ function renderDashboardHTML(beers) {
         <input type="number" name="sparge_water_liters" step="0.1" placeholder="bv. 9">
       </div>
 
-      <button type="submit">Opslaan</button>
+      <div style="display: flex; gap: 10px;">
+        <button type="submit" style="flex: 1;">Opslaan</button>
+        <button type="button" id="deleteBtn" style="flex: 1; background: #cc0000;" onclick="deleteBeer()">Verwijderen</button>
+      </div>
     </form>
   </div>
 
@@ -274,8 +277,29 @@ function renderDashboardHTML(beers) {
         document.querySelector('input[name="brew_date"]').value = beer.brew_date || '';
         document.querySelector('input[name="bottle_date"]').value = beer.bottle_date || '';
         document.querySelector('select[name="in_stock"]').value = beer.in_stock ? '1' : '0';
+        document.getElementById('deleteBtn').disabled = false;
+      } else {
+        document.getElementById('deleteBtn').disabled = true;
       }
     });
+
+    function deleteBeer() {
+      const beerId = document.querySelector('input[name="beer_id"]').value;
+      if (!beerId) {
+        alert('Selecteer een bier om te verwijderen');
+        return;
+      }
+      if (!confirm('Weet je zeker dat je dit bier wilt verwijderen?')) {
+        return;
+      }
+      fetch('/brouwerij/api/beer?id=' + beerId, { method: 'DELETE' })
+        .then(r => r.text())
+        .then(msg => {
+          alert(msg);
+          location.reload();
+        })
+        .catch(e => alert('Fout: ' + e));
+    }
   </script>
 </body>
 </html>`;
@@ -386,6 +410,25 @@ export default {
         }
 
         return new Response('Opgeslagen!', { headers: htmlHeaders() });
+      } catch (err) {
+        return new Response(`Fout: ${err.message}`, { status: 500 });
+      }
+    }
+
+    if (url.pathname === '/brouwerij/api/beer' && request.method === 'DELETE') {
+      if (!checkAuth(request)) {
+        return new Response('Unauthorized', { status: 401 });
+      }
+
+      const beerId = url.searchParams.get('id');
+      if (!beerId) {
+        return new Response('Beer ID vereist', { status: 400 });
+      }
+
+      try {
+        await env.DB.prepare('DELETE FROM beers WHERE id = ?').bind(beerId).run();
+        await env.DB.prepare('DELETE FROM beer_details WHERE beer_id = ?').bind(beerId).run();
+        return new Response('Bier verwijderd!', { headers: htmlHeaders() });
       } catch (err) {
         return new Response(`Fout: ${err.message}`, { status: 500 });
       }
