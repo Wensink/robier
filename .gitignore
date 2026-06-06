@@ -43,4 +43,5 @@ site/
 *.iso
 *.jar
 *.rar
-*.tar
+*.tar.env
+.env.local
