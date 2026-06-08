@@ -33,6 +33,9 @@ function renderBeerDetailHTML(beer, detail) {
     `<tr><td>${m.temp}</td><td>${m.tijd}</td><td>${m.sg || ''}</td></tr>`
   ).join('') : '';
 
+  const hasContent = detail.description || maltRows || hopRows || mashRows;
+  const titleSuffix = hasContent ? '' : ' <span style="color: #cc0000;">*</span>';
+
   const untappd = `https://untappd.com/search?q=brouwerij-robier+${encodeURIComponent(detail.title)}`;
 
   return `<!DOCTYPE html>
@@ -54,7 +57,7 @@ function renderBeerDetailHTML(beer, detail) {
 </head>
 <body>
   <a href="/bieren/">← Terug naar alle bieren</a>
-  <h1>${detail.title}</h1>
+  <h1>${detail.title}${titleSuffix}</h1>
   <div class="meta">
     <p><strong>Type:</strong> ${beer.type}</p>
     ${beer.abv ? `<p><strong>ABV:</strong> ${beer.abv}%</p>` : ''}
