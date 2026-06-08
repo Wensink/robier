@@ -349,7 +349,8 @@ export default {
         const password = formData.get('password');
 
         if (password === env.ADMIN_PASSWORD) {
-          return setAuthCookie(new Response(renderDashboardHTML([]), { headers: htmlHeaders() }));
+          const { results } = await env.DB.prepare('SELECT * FROM beers ORDER BY id').all();
+          return setAuthCookie(new Response(renderDashboardHTML(results), { headers: htmlHeaders() }));
         }
 
         return new Response(renderLoginHTML() + '<p style="color:red;text-align:center;">Wachtwoord ongeldig</p>', { headers: htmlHeaders() });
