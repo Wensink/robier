@@ -16,11 +16,19 @@ pattern = "robier.nl/brouwerij*"
 zone_name = "robier.nl"
 
 [[routes]]
+pattern = "robier.nl/bieren/*/index.html"
+zone_name = "robier.nl"
+
+[[routes]]
 pattern = "www.robier.nl/api/*"
 zone_name = "robier.nl"
 
 [[routes]]
 pattern = "www.robier.nl/brouwerij*"
+zone_name = "robier.nl"
+
+[[routes]]
+pattern = "www.robier.nl/bieren/*/index.html"
 zone_name = "robier.nl"
 
 [env.production]
