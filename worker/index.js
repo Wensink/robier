@@ -135,14 +135,14 @@ function renderLoginHTML() {
 }
 
 function renderDashboardHTML(beers) {
-  const beerOptions = beers.map(b => `<option value="${b.id}">${b.name} (#${b.id})</option>`).join('');
+  const beersJson = JSON.stringify(beers);
 
   return `<!DOCTYPE html>
 <html lang="nl">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Dashboard - Brouwerij Robier</title>
+  <title>Dashboard - Brouwerij Robier Admin</title>
   <style>
     body { font-family: sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; }
     h1 { text-align: center; }
@@ -159,14 +159,13 @@ function renderDashboardHTML(beers) {
 </head>
 <body>
   <div class="logout"><a href="/brouwerij/logout">Uitloggen</a></div>
-  <h1>Brouwerij RoBier Dashboard</h1>
+  <h1>Brouwerij Admin Dashboard</h1>
 
-  <div class="controls">
+  <div class="controls" data-beers='${beersJson}'>
     <div class="form-group">
       <label>Selecteer bier:</label>
       <select id="beerSelect">
         <option value="">-- Nieuw bier --</option>
-        ${beerOptions}
       </select>
     </div>
 
@@ -254,20 +253,17 @@ function renderDashboardHTML(beers) {
   </div>
 
   <script>
+    const allBeers = JSON.parse(document.querySelector('.controls').dataset.beers);
     const select = document.getElementById('beerSelect');
     const form = document.getElementById('beerForm');
     const beerId = document.getElementById('beerId');
 
-    fetch('/api/bieren')
-      .then(r => r.json())
-      .then(beers => {
-        beers.forEach(beer => {
-          const option = document.createElement('option');
-          option.value = beer.id;
-          option.textContent = `${beer.name} (#${beer.id})`;
-          select.appendChild(option);
-        });
-      });
+    allBeers.forEach(beer => {
+      const option = document.createElement('option');
+      option.value = beer.id;
+      option.textContent = `${beer.name} (#${beer.id})`;
+      select.appendChild(option);
+    });
 
     select.addEventListener('change', async function() {
       if (!this.value) {
@@ -277,9 +273,7 @@ function renderDashboardHTML(beers) {
         return;
       }
 
-      const resp = await fetch('/api/bieren');
-      const beers = await resp.json();
-      const beer = beers.find(b => b.id === this.value);
+      const beer = allBeers.find(b => b.id === this.value);
 
       if (beer) {
         document.querySelector('input[name="beer_id"]').value = beer.id;
