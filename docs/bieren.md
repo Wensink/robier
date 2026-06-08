@@ -21,13 +21,13 @@ Hier de bieren die er gemaakt zijn
     .then(function (res) { return res.json(); })
     .then(function (bieren) {
       var rows = bieren.map(function (b) {
-        var num = b.detail_path
-          ? '<a href="/' + b.detail_path.replace('.md', '/') + '">' + b.id.split('-')[0] + '</a>'
-          : b.id;
+        var detailUrl = '/bieren/' + b.id + '/';
+        var num = '<a href="' + detailUrl + '">' + b.id.split('-')[0] + '</a>';
+        var name = '<a href="' + detailUrl + '">' + b.name + '</a>';
         var voorraad = b.in_stock ? 'Ja' : 'Nee';
         return '<tr>'
           + '<td>' + num + '</td>'
-          + '<td>' + b.name + '</td>'
+          + '<td>' + name + '</td>'
           + '<td>' + b.type + '</td>'
           + '<td>' + formatAbv(b.abv) + '</td>'
           + '<td>' + formatDate(b.brew_date) + '</td>'
