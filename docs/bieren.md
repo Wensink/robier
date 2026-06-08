@@ -22,8 +22,9 @@ Hier de bieren die er gemaakt zijn
     .then(function (bieren) {
       var rows = bieren.map(function (b) {
         var detailUrl = '/bieren/' + b.id + '/';
+        var nameSuffix = b.has_content ? '' : ' <span style="color: #cc0000;">*</span>';
         var num = '<a href="' + detailUrl + '">' + b.id.split('-')[0] + '</a>';
-        var name = '<a href="' + detailUrl + '">' + b.name + '</a>';
+        var name = '<a href="' + detailUrl + '">' + b.name + nameSuffix + '</a>';
         var voorraad = b.in_stock ? 'Ja' : 'Nee';
         return '<tr>'
           + '<td>' + num + '</td>'

@@ -34,7 +34,6 @@ function renderBeerDetailHTML(beer, detail) {
   ).join('') : '';
 
   const hasContent = detail.description || maltRows || hopRows || mashRows;
-  const titleSuffix = hasContent ? '' : ' <span style="color: #cc0000;">*</span>';
 
   const untappd = `https://untappd.com/search?q=brouwerij-robier+${encodeURIComponent(detail.title)}`;
 
@@ -57,7 +56,7 @@ function renderBeerDetailHTML(beer, detail) {
 </head>
 <body>
   <a href="/bieren/">← Terug naar alle bieren</a>
-  <h1>${detail.title}${titleSuffix}</h1>
+  <h1>${detail.title}</h1>
   <div class="meta">
     <p><strong>Type:</strong> ${beer.type}</p>
     ${beer.abv ? `<p><strong>ABV:</strong> ${beer.abv}%</p>` : ''}
@@ -335,7 +334,7 @@ export default {
 
     if (url.pathname === '/api/bieren') {
       const { results } = await env.DB.prepare(
-        'SELECT * FROM beers ORDER BY brew_date DESC, id ASC'
+        'SELECT beers.*, (beer_details.description IS NOT NULL OR beer_details.malt IS NOT NULL OR beer_details.hops IS NOT NULL OR beer_details.mash IS NOT NULL) as has_content FROM beers LEFT JOIN beer_details ON beers.id = beer_details.beer_id ORDER BY beers.brew_date DESC, beers.id ASC'
       ).all();
 
       return new Response(JSON.stringify(results), { headers: corsHeaders(origin) });
